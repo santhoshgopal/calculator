@@ -1,0 +1,37 @@
+
+
+<center>
+<form name="my">
+ENTER THE VALUE:<input type="text" name="input2">
+<br>
+<br>
+ENTER THE VALUE:<input type="text" name="input1">
+<br>
+<br>
+THE ANSWER IS:<input type="text" name="input3">
+<br>
+<br>
+<input type='button' value='+'  onclick="add()">
+<input type='button' value='-'  onclick="sub()">
+<input type='button' value='*'  onclick="mul()">
+<input type='button' value='/'  onclick="div()">
+</form>
+</center>
+<script>
+function add()
+{
+my.input3.value=parseInt(my.input2.value) + parseInt(my.input1.value);
+}
+function sub()
+{
+my.input3.value=parseInt(my.input2.value) - parseInt(my.input1.value);
+}
+function mul()
+{
+my.input3.value=parseInt(my.input2.value) * parseInt(my.input1.value);
+}
+function div()
+{
+my.input3.value=parseInt(my.input2.value) / parseInt(my.input1.value);
+}
+</script>
